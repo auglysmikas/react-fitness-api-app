@@ -15,19 +15,10 @@ const Home = () => {
   return (
 
     <Box>
-      <HeroBanner/>
-      <SearchExercise 
-      setExercises={setExercises}
-      bodyPart={bodyPart}
-      setBodyPart={setBodyPart}
-      />
-      <Exercises
-        setExercises={setExercises}
-        bodyPart={bodyPart}
-        setBodyPart={setBodyPart}
-      />
-    </Box>
-  )
-}  
-
+    <HeroBanner />
+    <SearchExercise setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
+    <Exercises setExercises={setExercises} exercises={exercises} bodyPart={bodyPart} />
+  </Box>
+);
+};
 export default Home;
